@@ -1,0 +1,22 @@
+{
+  "name": "jiragrok",
+  "version": "1.0.0",
+  "description": "AI-powered JIRA ticket summarizer using Groq API",
+  "main": "content.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint ."
+  },
+  "keywords": ["chrome-extension", "jira", "summarizer", "ai", "jiragrok"],
+  "author": "JiraGrok",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": ["<rootDir>/tests/setup.js"]
+  }
+}
