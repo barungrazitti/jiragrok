@@ -324,20 +324,61 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## FAQ
 
-**Q: Is my API key secure?**
-A: Yes. API keys are stored in Chrome's encrypted local storage and are only used to authenticate requests to Groq's API.
+<details>
+<summary><b>🔐 Is my API key secure?</b></summary>
 
-**Q: Does this extension read my JIRA data?**
-A: The extension only accesses JIRA pages when you open the popup. The data is sent directly to Groq for processing and is not stored or transmitted anywhere else.
+**Yes!** Your API key is stored in Chrome's encrypted local storage (`chrome.storage.local`). It never leaves your browser except for direct requests to Groq's API. We don't collect, track, or transmit any data.
 
-**Q: Can I use this with self-hosted JIRA?**
-A: Currently, the extension is configured for Atlassian Cloud and jira.grazitti.com. Self-hosted JIRA instances can be added by updating the `content_scripts.matches` pattern in `manifest.json`.
+</details>
 
-**Q: What happens if I don't have an API key?**
-A: You'll see a prompt to configure your API key before using the summarization feature.
+<details>
+<summary><b>📊 Does this extension read my JIRA data?</b></summary>
 
-**Q: Is there a cost to use this extension?**
-A: The extension is free. Groq offers a generous free tier for API usage. Check [Groq's pricing](https://groq.com/pricing/) for current rates.
+The extension only accesses JIRA pages when you explicitly open the popup. Data is sent directly to Groq for processing and is not stored anywhere else. Nothing is logged or saved to external servers.
+
+</details>
+
+<details>
+<summary><b>💰 Is there a cost to use JiraGrok?</b></summary>
+
+The extension itself is completely free. Groq offers a generous free tier for API usage. Check current rates at [groq.com/pricing](https://groq.com/pricing). Most users stay well within the free quota.
+
+</details>
+
+<details>
+<summary><b>🌐 Can I use this with self-hosted JIRA?</b></summary>
+
+Currently, JiraGrok supports Atlassian Cloud (`*.atlassian.net`) and `jira.grazitti.com`. Self-hosted JIRA instances can be added by updating the `content_scripts.matches` pattern in `manifest.json`.
+
+</details>
+
+<details>
+<summary><b>🚀 How does summarization work?</b></summary>
+
+JiraGrok extracts key ticket fields (description, comments, assignee, priority, status, etc.) and sends them to Groq's Llama 3.3 70B model. The AI generates a structured summary in 5 sections: Main Objective, Key Details, Contributors, Key Timelines, and Next Steps.
+
+</details>
+
+<details>
+<summary><b>❌ What if I don't have an API key?</b></summary>
+
+You'll see a prompt to configure your Groq API key before using the summarization feature. Get your free key at [console.groq.com/keys](https://console.groq.com/keys).
+
+</details>
+
+<details>
+<summary><b>🧠 What does "grok" mean?</b></summary>
+
+From Robert Heinlein's *Stranger in a Strange Land*: to grok means to understand intuitively, to empathize with, to "drink in" completely. Just like JiraGrok deeply understands your JIRA tickets! 😄
+
+</details>
+
+<details>
+<summary><b>🔧 Can I contribute to this project?</b></summary>
+
+Absolutely! Contributions are welcome—improved JIRA selectors, better prompts, new features, bug fixes, or documentation. Fork the repo, make changes, and submit a PR!
+
+</details>
 
 ## License
 
