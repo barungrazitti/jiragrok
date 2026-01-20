@@ -17,7 +17,20 @@
 
 > *"I grok him."* — Robert A. Heinlein, Stranger in a Strange Land
 
-JiraGrok is a Chrome extension that automatically extracts and summarizes JIRA tickets using advanced AI. Cut through the noise and understand ticket context in seconds.
+JiraGrok is an AI-powered Chrome extension that automatically extracts and summarizes JIRA tickets in seconds. Built with modern web technologies and following Chrome's Manifest V3 standards, it helps development teams quickly understand ticket context without reading through lengthy descriptions and comment threads.
+
+<div align="center">
+
+### ⭐ Key Features
+
+| ⚡ | 🚀 | 🔒 | 📊 |
+|---|---|---|---|
+| Auto-Summarization | Groq Llama 3.3 70B | Local API Key Storage | 5-Section Output |
+| Copy to Clipboard | Regenerate Summary | No Data Collection | Clean UI |
+
+**Categories:** `chrome-extension` `jira` `summarizer` `ai` `productivity` `groq` `manifest-v3`
+
+</div>
 
 ## Features
 
@@ -40,7 +53,7 @@ JiraGrok is a Chrome extension that automatically extracts and summarizes JIRA t
 
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/yourusername/jiragrok.git
+   git clone https://github.com/barungrazitti/jiragrok.git
    cd jiragrok/jira-summariser
    ```
 
